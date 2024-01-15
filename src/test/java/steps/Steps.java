@@ -17,11 +17,12 @@ public class Steps {
 
         System.setProperty("webdriver.chromedriver.driver",
                 "src/test/resources/chromedriver.exe");
-        driver.get("string");
-        driver.manage().timeouts().pageLoadTimeout(10,
+        driver.get(string);
+        driver.manage().timeouts().pageLoadTimeout(20,
                 TimeUnit.SECONDS);
         driver.manage().window().maximize();
     }
+
 
     @И("выполнено нажатие на {string}")
     public void выполнено_нажатие_на(String string){
